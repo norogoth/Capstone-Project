@@ -1,0 +1,408 @@
+﻿'Capstone Project.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Users\Norog\source\repos\Capstone Project\Capstone Project\bin\Debug\Capstone Project.exe'. Symbols loaded.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\Users\Norog\source\repos\Capstone Project\Capstone Project\bin\Debug\CsvHelper.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\Users\Norog\source\repos\Capstone Project\Capstone Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\Users\Norog\source\repos\Capstone Project\Capstone Project\bin\Debug\System.Threading.Tasks.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'Anonymously Hosted DynamicMethods Assembly'. 
+test
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The length of this list is 5
+The length of this list is 2
+The length of this list is 1
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms.DataVisualization\v4.0_4.0.0.0__31bf3856ad364e35\System.Windows.Forms.DataVisualization.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Dana Eveland is comparable to Craig Kimbrel
+Gavin Floyd is comparable to Craig Kimbrel
+Tom Gordon is comparable to Craig Kimbrel
+Zack Greinke is comparable to Craig Kimbrel
+Roy Halladay is comparable to Craig Kimbrel
+Tommy Hunter is comparable to Craig Kimbrel
+Brandon League is comparable to Craig Kimbrel
+Brandon Morrow is comparable to Craig Kimbrel
+Age: 22 ERA: 0.45
+Age: 23 ERA: 2.1038961038961
+Age: 24 ERA: 1.01612903225806
+Age: 25 ERA: 1.2089552238806
+Age: 26 ERA: 1.62295081967213
+Age: 27 ERA: 2.59322033898305
+Age: 28 ERA: 3.39622641509434
+Age: 29 ERA: 1.43478260869565
+Age: 30 ERA: 2.75806451612903
+Age: 31 ERA: 6.75
+Age: 32 ERA: 3.50370117454553
+Age: 22 ERA: 0.45
+Age: 23 ERA: 2.1038961038961
+Age: 24 ERA: 1.01612903225806
+Age: 25 ERA: 1.2089552238806
+Age: 26 ERA: 1.62295081967213
+Age: 27 ERA: 2.59322033898305
+Age: 28 ERA: 3.39622641509434
+Age: 29 ERA: 1.43478260869565
+Age: 30 ERA: 2.75806451612903
+Age: 31 ERA: 6.75
+Age: 32 ERA: 3.50370117454553
+Age: 33 ERA: 3.57827104277169
+Age: 22 ERA: 0.45
+Age: 23 ERA: 2.1038961038961
+Age: 24 ERA: 1.01612903225806
+Age: 25 ERA: 1.2089552238806
+Age: 26 ERA: 1.62295081967213
+Age: 27 ERA: 2.59322033898305
+Age: 28 ERA: 3.39622641509434
+Age: 29 ERA: 1.43478260869565
+Age: 30 ERA: 2.75806451612903
+Age: 31 ERA: 6.75
+Age: 32 ERA: 3.50370117454553
+Age: 33 ERA: 3.57827104277169
+Age: 34 ERA: 3.35186279553394
+Age: 22 ERA: 0.45
+Age: 23 ERA: 2.1038961038961
+Age: 24 ERA: 1.01612903225806
+Age: 25 ERA: 1.2089552238806
+Age: 26 ERA: 1.62295081967213
+Age: 27 ERA: 2.59322033898305
+Age: 28 ERA: 3.39622641509434
+Age: 29 ERA: 1.43478260869565
+Age: 30 ERA: 2.75806451612903
+Age: 31 ERA: 6.75
+Age: 32 ERA: 3.50370117454553
+Age: 33 ERA: 3.57827104277169
+Age: 34 ERA: 3.35186279553394
+Age: 35 ERA: 3.40638151284981
+Age: 22 ERA: 0.45
+Age: 23 ERA: 2.1038961038961
+Age: 24 ERA: 1.01612903225806
+Age: 25 ERA: 1.2089552238806
+Age: 26 ERA: 1.62295081967213
+Age: 27 ERA: 2.59322033898305
+Age: 28 ERA: 3.39622641509434
+Age: 29 ERA: 1.43478260869565
+Age: 30 ERA: 2.75806451612903
+Age: 31 ERA: 6.75
+Age: 32 ERA: 3.50370117454553
+Age: 33 ERA: 3.57827104277169
+Age: 34 ERA: 3.35186279553394
+Age: 35 ERA: 3.40638151284981
+Age: 36 ERA: 3.52411655463597
+'Capstone Project.exe' (CLR v4.0.30319: Capstone Project.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Age: 22 WHIP: 1.25
+Age: 23 WHIP: 1.03896103896104
+Age: 24 WHIP: 0.661290322580645
+Age: 25 WHIP: 0.880597014925373
+Age: 26 WHIP: 0.918032786885246
+Age: 27 WHIP: 1.05084745762712
+Age: 28 WHIP: 1.09433962264151
+Age: 29 WHIP: 0.681159420289855
+Age: 30 WHIP: 1
+Age: 31 WHIP: 1.65
+Age: 32 WHIP: 1.44625214755045
+Age: 33 WHIP: 1.30722076215375
+Age: 34 WHIP: 1.25163014443198
+Age: 35 WHIP: 1.24825747072598
+Age: 36 WHIP: 1.24381119401172
+The length of this list is 5
+The length of this list is 1
+The length of this list is 1
+Terry Adams is comparable to Tyler Skaggs
+Brian Anderson is comparable to Tyler Skaggs
+Trevor Bauer is comparable to Tyler Skaggs
+Matt Capps is comparable to Tyler Skaggs
+Tony Cingrani is comparable to Tyler Skaggs
+Aaron Cook is comparable to Tyler Skaggs
+Neal Cotts is comparable to Tyler Skaggs
+Juan Cruz is comparable to Tyler Skaggs
+Jorge De La Rosa is comparable to Tyler Skaggs
+Darren Dreifort is comparable to Tyler Skaggs
+Adam Eaton is comparable to Tyler Skaggs
+Gavin Floyd is comparable to Tyler Skaggs
+Jaime Garcia is comparable to Tyler Skaggs
+Jon Garland is comparable to Tyler Skaggs
+Tom Gordon is comparable to Tyler Skaggs
+Tom Gorzelanny is comparable to Tyler Skaggs
+Danny Graves is comparable to Tyler Skaggs
+Rich Harden is comparable to Tyler Skaggs
+Liam Hendriks is comparable to Tyler Skaggs
+Kelvin Herrera is comparable to Tyler Skaggs
+Sterling Hitchcock is comparable to Tyler Skaggs
+Bobby Jones is comparable to Tyler Skaggs
+Darryl Kile is comparable to Tyler Skaggs
+John Lannan is comparable to Tyler Skaggs
+Ted Lilly is comparable to Tyler Skaggs
+Jordan Lyles is comparable to Tyler Skaggs
+John Maine is comparable to Tyler Skaggs
+Ben McDonald is comparable to Tyler Skaggs
+Jose Paniagua is comparable to Tyler Skaggs
+Brad Penny is comparable to Tyler Skaggs
+Chris Perez is comparable to Tyler Skaggs
+Andy Pettitte is comparable to Tyler Skaggs
+Hipolito Pichardo is comparable to Tyler Skaggs
+Jose Quintana is comparable to Tyler Skaggs
+Brad Radke is comparable to Tyler Skaggs
+Robbie Ray is comparable to Tyler Skaggs
+Bryan Rekar is comparable to Tyler Skaggs
+Kirk Rueter is comparable to Tyler Skaggs
+Jeff Samardzija is comparable to Tyler Skaggs
+Jason Schmidt is comparable to Tyler Skaggs
+Aaron Sele is comparable to Tyler Skaggs
+Carlos Silva is comparable to Tyler Skaggs
+Tyler Skaggs is comparable to Tyler Skaggs
+Mike Stanton is comparable to Tyler Skaggs
+Steve Trachsel is comparable to Tyler Skaggs
+Ismael Valdez is comparable to Tyler Skaggs
+Jason Vargas is comparable to Tyler Skaggs
+Randy Wolf is comparable to Tyler Skaggs
+Kerry Wood is comparable to Tyler Skaggs
+Vance Worley is comparable to Tyler Skaggs
+Age: 21 ERA: 5.89655172413793
+Age: 22 ERA: 5.21052631578947
+Age: 23 ERA: 4.30088495575221
+Age: 25 ERA: 4.22448979591837
+Age: 26 ERA: 4.55294117647059
+Age: 27 ERA: 4.032
+Age: 28 ERA: 4.32911392405063
+Age: 29 ERA: 4.49340145009018
+Age: 21 ERA: 5.89655172413793
+Age: 22 ERA: 5.21052631578947
+Age: 23 ERA: 4.30088495575221
+Age: 25 ERA: 4.22448979591837
+Age: 26 ERA: 4.55294117647059
+Age: 27 ERA: 4.032
+Age: 28 ERA: 4.32911392405063
+Age: 29 ERA: 4.49340145009018
+Age: 30 ERA: 4.73055995519917
+Age: 21 ERA: 5.89655172413793
+Age: 22 ERA: 5.21052631578947
+Age: 23 ERA: 4.30088495575221
+Age: 25 ERA: 4.22448979591837
+Age: 26 ERA: 4.55294117647059
+Age: 27 ERA: 4.032
+Age: 28 ERA: 4.32911392405063
+Age: 29 ERA: 4.49340145009018
+Age: 30 ERA: 4.73055995519917
+Age: 31 ERA: 4.67199181386017
+Age: 21 ERA: 5.89655172413793
+Age: 22 ERA: 5.21052631578947
+Age: 23 ERA: 4.30088495575221
+Age: 25 ERA: 4.22448979591837
+Age: 26 ERA: 4.55294117647059
+Age: 27 ERA: 4.032
+Age: 28 ERA: 4.32911392405063
+Age: 29 ERA: 4.49340145009018
+Age: 30 ERA: 4.73055995519917
+Age: 31 ERA: 4.67199181386017
+Age: 32 ERA: 4.74339387967815
+Age: 21 ERA: 5.89655172413793
+Age: 22 ERA: 5.21052631578947
+Age: 23 ERA: 4.30088495575221
+Age: 25 ERA: 4.22448979591837
+Age: 26 ERA: 4.55294117647059
+Age: 27 ERA: 4.032
+Age: 28 ERA: 4.32911392405063
+Age: 29 ERA: 4.49340145009018
+Age: 30 ERA: 4.73055995519917
+Age: 31 ERA: 4.67199181386017
+Age: 32 ERA: 4.74339387967815
+Age: 33 ERA: 4.65646754868923
+Age: 21 WHIP: 1.48275862068966
+Age: 22 WHIP: 1.39473684210526
+Age: 23 WHIP: 1.21238938053097
+Age: 25 WHIP: 1.51020408163265
+Age: 26 WHIP: 1.38823529411765
+Age: 27 WHIP: 1.336
+Age: 28 WHIP: 1.27848101265823
+Age: 29 WHIP: 1.39244188665002
+Age: 30 WHIP: 1.40696694744298
+Age: 31 WHIP: 1.39880079000212
+Age: 32 WHIP: 1.43418901843267
+Age: 33 WHIP: 1.4113392929518
+The length of this list is 53
+The length of this list is 7
+The length of this list is 2
+Matt Belisle is comparable to Max Scherzer
+Kevin Brown is comparable to Max Scherzer
+Jesse Chavez is comparable to Max Scherzer
+Eddie Guardado is comparable to Max Scherzer
+Yusmeiro Petit is comparable to Max Scherzer
+Age: 24 ERA: 3.05357142857143
+Age: 25 ERA: 4.12941176470588
+Age: 26 ERA: 3.50769230769231
+Age: 27 ERA: 4.43076923076923
+Age: 28 ERA: 3.75401069518717
+Age: 29 ERA: 2.9018691588785
+Age: 30 ERA: 3.15
+Age: 31 ERA: 2.80263157894737
+Age: 32 ERA: 2.96052631578947
+Age: 33 ERA: 2.52
+Age: 34 ERA: 2.53636363636364
+Age: 35 ERA: 2.93023255813953
+Age: 36 ERA: 3.28994621712013
+Age: 24 ERA: 3.05357142857143
+Age: 25 ERA: 4.12941176470588
+Age: 26 ERA: 3.50769230769231
+Age: 27 ERA: 4.43076923076923
+Age: 28 ERA: 3.75401069518717
+Age: 29 ERA: 2.9018691588785
+Age: 30 ERA: 3.15
+Age: 31 ERA: 2.80263157894737
+Age: 32 ERA: 2.96052631578947
+Age: 33 ERA: 2.52
+Age: 34 ERA: 2.53636363636364
+Age: 35 ERA: 2.93023255813953
+Age: 36 ERA: 3.28994621712013
+Age: 37 ERA: 4.24033033442971
+Age: 24 ERA: 3.05357142857143
+Age: 25 ERA: 4.12941176470588
+Age: 26 ERA: 3.50769230769231
+Age: 27 ERA: 4.43076923076923
+Age: 28 ERA: 3.75401069518717
+Age: 29 ERA: 2.9018691588785
+Age: 30 ERA: 3.15
+Age: 31 ERA: 2.80263157894737
+Age: 32 ERA: 2.96052631578947
+Age: 33 ERA: 2.52
+Age: 34 ERA: 2.53636363636364
+Age: 35 ERA: 2.93023255813953
+Age: 36 ERA: 3.28994621712013
+Age: 37 ERA: 4.24033033442971
+Age: 38 ERA: 4.41906858325847
+Age: 24 ERA: 3.05357142857143
+Age: 25 ERA: 4.12941176470588
+Age: 26 ERA: 3.50769230769231
+Age: 27 ERA: 4.43076923076923
+Age: 28 ERA: 3.75401069518717
+Age: 29 ERA: 2.9018691588785
+Age: 30 ERA: 3.15
+Age: 31 ERA: 2.80263157894737
+Age: 32 ERA: 2.96052631578947
+Age: 33 ERA: 2.52
+Age: 34 ERA: 2.53636363636364
+Age: 35 ERA: 2.93023255813953
+Age: 36 ERA: 3.28994621712013
+Age: 37 ERA: 4.24033033442971
+Age: 38 ERA: 4.41906858325847
+Age: 39 ERA: 4.39846624362449
+Age: 24 ERA: 3.05357142857143
+Age: 25 ERA: 4.12941176470588
+Age: 26 ERA: 3.50769230769231
+Age: 27 ERA: 4.43076923076923
+Age: 28 ERA: 3.75401069518717
+Age: 29 ERA: 2.9018691588785
+Age: 30 ERA: 3.15
+Age: 31 ERA: 2.80263157894737
+Age: 32 ERA: 2.96052631578947
+Age: 33 ERA: 2.52
+Age: 34 ERA: 2.53636363636364
+Age: 35 ERA: 2.93023255813953
+Age: 36 ERA: 3.28994621712013
+Age: 37 ERA: 4.24033033442971
+Age: 38 ERA: 4.41906858325847
+Age: 39 ERA: 4.39846624362449
+Age: 40 ERA: 4.56275703837202
+Age: 24 WHIP: 1.23214285714286
+Age: 25 WHIP: 1.34705882352941
+Age: 26 WHIP: 1.25128205128205
+Age: 27 WHIP: 1.34871794871795
+Age: 28 WHIP: 1.27807486631016
+Age: 29 WHIP: 0.97196261682243
+Age: 30 WHIP: 1.17727272727273
+Age: 31 WHIP: 0.921052631578947
+Age: 32 WHIP: 0.969298245614035
+Age: 33 WHIP: 0.905
+Age: 34 WHIP: 0.913636363636364
+Age: 35 WHIP: 1.02906976744186
+Age: 36 WHIP: 1.27716412064238
+Age: 37 WHIP: 1.3226041617346
+Age: 38 WHIP: 1.33925186299318
+Age: 39 WHIP: 1.33989356472186
+Age: 40 WHIP: 1.36959616722481
+Age: 24 WHIP: 1.23214285714286
+Age: 25 WHIP: 1.34705882352941
+Age: 26 WHIP: 1.25128205128205
+Age: 27 WHIP: 1.34871794871795
+Age: 28 WHIP: 1.27807486631016
+Age: 29 WHIP: 0.97196261682243
+Age: 30 WHIP: 1.17727272727273
+Age: 31 WHIP: 0.921052631578947
+Age: 32 WHIP: 0.969298245614035
+Age: 33 WHIP: 0.905
+Age: 34 WHIP: 0.913636363636364
+Age: 35 WHIP: 1.02906976744186
+Age: 36 WHIP: 1.27716412064238
+Age: 37 WHIP: 1.3226041617346
+Age: 38 WHIP: 1.33925186299318
+Age: 39 WHIP: 1.33989356472186
+Age: 40 WHIP: 1.36959616722481
+Age: 24 WHIP: 1.23214285714286
+Age: 25 WHIP: 1.34705882352941
+Age: 26 WHIP: 1.25128205128205
+Age: 27 WHIP: 1.34871794871795
+Age: 28 WHIP: 1.27807486631016
+Age: 29 WHIP: 0.97196261682243
+Age: 30 WHIP: 1.17727272727273
+Age: 31 WHIP: 0.921052631578947
+Age: 32 WHIP: 0.969298245614035
+Age: 33 WHIP: 0.905
+Age: 34 WHIP: 0.913636363636364
+Age: 35 WHIP: 1.02906976744186
+Age: 36 WHIP: 1.27716412064238
+Age: 37 WHIP: 1.3226041617346
+Age: 38 WHIP: 1.33925186299318
+Age: 39 WHIP: 1.33989356472186
+Age: 40 WHIP: 1.36959616722481
+Age: 24 WHIP: 1.23214285714286
+Age: 25 WHIP: 1.34705882352941
+Age: 26 WHIP: 1.25128205128205
+Age: 27 WHIP: 1.34871794871795
+Age: 28 WHIP: 1.27807486631016
+Age: 29 WHIP: 0.97196261682243
+Age: 30 WHIP: 1.17727272727273
+Age: 31 WHIP: 0.921052631578947
+Age: 32 WHIP: 0.969298245614035
+Age: 33 WHIP: 0.905
+Age: 34 WHIP: 0.913636363636364
+Age: 35 WHIP: 1.02906976744186
+Age: 36 WHIP: 1.27716412064238
+Age: 37 WHIP: 1.3226041617346
+Age: 38 WHIP: 1.33925186299318
+Age: 39 WHIP: 1.33989356472186
+Age: 40 WHIP: 1.36959616722481
+Age: 24 WHIP: 1.23214285714286
+Age: 25 WHIP: 1.34705882352941
+Age: 26 WHIP: 1.25128205128205
+Age: 27 WHIP: 1.34871794871795
+Age: 28 WHIP: 1.27807486631016
+Age: 29 WHIP: 0.97196261682243
+Age: 30 WHIP: 1.17727272727273
+Age: 31 WHIP: 0.921052631578947
+Age: 32 WHIP: 0.969298245614035
+Age: 33 WHIP: 0.905
+Age: 34 WHIP: 0.913636363636364
+Age: 35 WHIP: 1.02906976744186
+Age: 36 WHIP: 1.27716412064238
+Age: 37 WHIP: 1.3226041617346
+Age: 38 WHIP: 1.33925186299318
+Age: 39 WHIP: 1.33989356472186
+Age: 40 WHIP: 1.36959616722481
+Age: 24 WHIP: 1.23214285714286
+Age: 25 WHIP: 1.34705882352941
+Age: 26 WHIP: 1.25128205128205
+Age: 27 WHIP: 1.34871794871795
+Age: 28 WHIP: 1.27807486631016
+Age: 29 WHIP: 0.97196261682243
+Age: 30 WHIP: 1.17727272727273
+Age: 31 WHIP: 0.921052631578947
+Age: 32 WHIP: 0.969298245614035
+Age: 33 WHIP: 0.905
+Age: 34 WHIP: 0.913636363636364
+Age: 35 WHIP: 1.02906976744186
+Age: 36 WHIP: 1.27716412064238
+Age: 37 WHIP: 1.3226041617346
+Age: 38 WHIP: 1.33925186299318
+Age: 39 WHIP: 1.33989356472186
+Age: 40 WHIP: 1.36959616722481
+The program '[14092] Capstone Project.exe' has exited with code 0 (0x0).

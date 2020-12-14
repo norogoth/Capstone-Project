@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Capstone_Project
 {
-    class YearStat : CsvImporter 
+    class YearStat : CsvImporter
     {
         public double BAOpp { get; set; }
         public double WHIP { get; set; }
@@ -14,6 +14,8 @@ namespace Capstone_Project
         public double k9 { get; set; }
         public int IP { get; set; }
         public int yearInLeague { get; set; }
+
+        public YearStat() { }
         public YearStat(CsvImporter csvImporter)
         {
             this.birthYear = csvImporter.birthYear;
@@ -51,11 +53,11 @@ namespace Capstone_Project
             this.SF = csvImporter.SF;
             this.GIDP = csvImporter.GIDP;
             this.IP = csvImporter.IPouts / 3;
-            if (this.IP != 0) 
-            { 
-            this.ERA = 9 * csvImporter.ER / this.IP;
-            this.WHIP = (csvImporter.BB + csvImporter.H) / this.IP;
-            this.k9 = (this.SO * 9) / this.IP;
+            if (this.IP != 0)
+            {
+                this.ERA = (9.0 * csvImporter.ER) / (1.0 * this.IP);
+                this.WHIP = ((double)csvImporter.BB + (double)csvImporter.H) / (double)this.IP;
+                this.k9 = (this.SO * 9) / this.IP;
             }
         }
     }

@@ -14,7 +14,9 @@ namespace Capstone_Project
         public int birthYear;
         public String fullName { get; set; }
         public Dictionary<int, YearStat> ageStatsDict = new Dictionary<int, YearStat>();
-        public Dictionary<int, YearStat> projectedAgeStatsDict = new Dictionary<int, YearStat>();
+        //public Dictionary<int, ProjYearStat> projectedAgeStatsDict = new Dictionary<int, ProjYearStat>();
+        public List<Pitcher> comparablePitchers = new List<Pitcher>();
+        public bool atLeastThreeComparables;
         public Pitcher()
         {
 
@@ -27,18 +29,169 @@ namespace Capstone_Project
             this.birthYear = birthYear;
             this.fullName = this.firstName + " " + this.lastName;
         }
-        public void initializeProjectedAgeStatsDict()
+        public int getAge()
         {
-            
+            int currentAge = -1;
+            foreach (int age in ageStatsDict.Keys)
+            {
+                if (age > currentAge)
+                {
+                    currentAge = age;
+                }
+            }
+            return currentAge;
+        }
+        public int getYearOfExperience()
+        {
+            int currentExperience = -1;
+            foreach (YearStat yearStat in ageStatsDict.Values)
+            {
+                if (yearStat.yearInLeague > currentExperience)
+                {
+                    currentExperience = yearStat.yearInLeague;
+                }
+            }
+            return currentExperience;
+        }
+        public void initializeComparablePitchers()
+        {
+            double averagedERA = Data.selectedPitcher.averagedERA();
+            double eraMin = averagedERA * .95;
+            double eraMax = averagedERA * 1.05;
+            int pitcherAge = Data.selectedPitcher.getAge();
+            int yearOfExperience = Data.selectedPitcher.getYearOfExperience();
             foreach (Pitcher pitcher in Data.PitcherIdList.Values)
             {
-                if ()
-                {
-
+                if (pitcher.ageStatsDict.ContainsKey(pitcherAge)) {
+                double EraAtSameAge = pitcher.ageStatsDict[pitcherAge].ERA;
+                if (EraAtSameAge > averagedERA * .95 && EraAtSameAge < averagedERA * 1.05)
+                    {
+                        int comparablePitchersYearsInLeague = pitcher.ageStatsDict[pitcherAge].yearInLeague;
+                        if (comparablePitchersYearsInLeague >= yearOfExperience - 1 && comparablePitchersYearsInLeague <= yearOfExperience + 1)
+                        {
+                            comparablePitchers.Add(pitcher);
+                            Console.WriteLine(pitcher.firstName + " " + pitcher.lastName + " is comparable to " + Data.selectedPitcher.firstName + " " + Data.selectedPitcher.lastName);
+                        }
+                    }
                 }
+            }
+            if (comparablePitchers.Count() >= 3)
+            {
+                atLeastThreeComparables = true;
+            }
+            else if (comparablePitchers.Count() < 3)
+            {
+                atLeastThreeComparables = false;
             }
         }
 
+        public void initializeProjYearStats()
+        {
+            if (comparablePitchers.Count >= 3)
+            {
+                int cut = 0;
+                int notCut = 0;
+                double cutChance = -1;
+                List<double> eras = new List<double>();
+                double lowerStandardDevEra;
+                double predictedEra;
+                double upperStandardDevEra;
+                List<double> WHIPs = new List<double>();
+                double predictedWHIP;
+                List<int> ks = new List<int>();
+                double predictedKs;
+                List<double> k9s = new List<double>();
+                double predictedk9s;
+                
+                int startingPitcherage = getAge();
+                for (int ageCounter = startingPitcherage + 1; ageCounter <= startingPitcherage + 5; ageCounter++)
+                {
+                    foreach (Pitcher comparablePitcher in comparablePitchers)
+                    {
+                        bool isThisPlayerPlayingAtAge = comparablePitcher.ageStatsDict.ContainsKey(ageCounter);
+                        if (isThisPlayerPlayingAtAge)
+                        {
+                            notCut += 1;
+                            eras.Add(comparablePitcher.ageStatsDict[ageCounter].ERA);
+                            WHIPs.Add(comparablePitcher.ageStatsDict[ageCounter].WHIP);
+                            ks.Add(comparablePitcher.ageStatsDict[ageCounter].SO);
+                            k9s.Add(comparablePitcher.ageStatsDict[ageCounter].k9);
+                            //Console.WriteLine(comparablePitcher.firstName + " " + comparablePitcher.lastName + " has an ERA of " + comparablePitcher.ageStatsDict[ageCounter].ERA + " at age " + ageCounter);
+                        }
+                        else if (!isThisPlayerPlayingAtAge)
+                        {
+                            cut += 1;
+                        }
+                        cutChance = Math.Round(cut * 1.0 / notCut * 1.0, 3);
+                    }
+                    double eraSD = StdDev(eras);
+                    predictedEra = eras.Average();
+                    predictedWHIP = WHIPs.Average();
+                    predictedKs = ks.Average();
+                    predictedk9s = k9s.Average();
+
+                    lowerStandardDevEra = predictedEra - eraSD;
+                    upperStandardDevEra = predictedEra + eraSD;
+
+                    ProjYearStat newPYS = new ProjYearStat(ageCounter);
+                    newPYS.ERA = predictedEra;
+                    newPYS.lowerStandardDevERA = lowerStandardDevEra;
+                    newPYS.upperStandardDevERA = upperStandardDevEra;
+                    newPYS.cutChance = cutChance;
+                    newPYS.WHIP = predictedWHIP;
+                    newPYS.SO = (int) predictedKs;
+                    newPYS.k9 = predictedk9s;
+                    try 
+                    {
+                        ageStatsDict.Add(ageCounter, newPYS);
+                    }
+                    catch(Exception e)
+                    {
+                        Console.WriteLine(e.StackTrace);
+                        foreach(YearStat yearStat in ageStatsDict.Values)
+                        {
+                            Console.WriteLine("Age: " + yearStat.age);
+                            Console.WriteLine("Age of newPYS: " + newPYS.age);
+                        }
+                    }
+                    foreach (YearStat yearStat in ageStatsDict.Values)
+                    {
+                        Console.WriteLine("Age: " + yearStat.age + " ERA: " + yearStat.ERA);
+                    }
+                    //Console.WriteLine("getAge(): " + getAge() + " ageCounter: " + ageCounter);
+                    /*Console.WriteLine("= = = = = = =");
+                    Console.WriteLine("Age: " + newPYS.age + " Predicted ERA: " + newPYS.ERA);
+                    Console.WriteLine("Upper ERA: " + newPYS.upperStandardDevERA + " Lower ERA: " + newPYS.lowerStandardDevERA);
+                    Console.WriteLine("Cut Chance: " + newPYS.cutChance);
+                    Console.WriteLine("Standard Deviation: " + (newPYS.upperStandardDevERA - newPYS.ERA));*/
+                }
+            }
+        }
+        public static double StdDev(IEnumerable<double> values)
+        {
+            double mean = values.Sum() / values.Count();
+            List<double> squares_query = new List<double>();
+            foreach (double value in values)
+            {
+                double square = (value - mean) * (value - mean);
+                squares_query.Add(square);
+            }
+            double sum_of_squares = squares_query.Sum();
+            return Math.Sqrt(sum_of_squares / (values.Count()));
+        }
+        public static double StdDev(IEnumerable<int> values)
+        {
+            double[] doubleArray = new double[values.Count()];
+            int i = 0;
+            foreach (int value in values)
+            {
+                double doubleValue = (double) value;
+                doubleArray[i] = doubleValue;
+                i++;
+            }
+            double standardDev = StdDev(doubleArray);
+            return standardDev;
+        }
         public int getOldestYear(List<YearStat> yearStatList)
         {
             int currentMinYear = 3000;
@@ -88,12 +241,20 @@ namespace Capstone_Project
             yearStatList.Remove(yearStatToDelete);
             return yearStatList;
         }
-        public List<YearStat> getLatestYS(int numberOfYears)
+        public List<YearStat> getLatestYsSince(int numberOfYears, int age)
         {
             List<YearStat> latestYearStats = new List<YearStat>();
             int counter = 0;
             int currentMinYear = 3000;
+            List<YearStat> yearStatsBeforeAge = new List<YearStat>();
             foreach (YearStat yearStat in this.ageStatsDict.Values)
+            {
+                if (yearStat.age <= age)
+                {
+                    yearStatsBeforeAge.Add(yearStat);
+                }
+            }
+            foreach (YearStat yearStat in yearStatsBeforeAge)
             {
                 if (counter <= numberOfYears - 1)
                 {
@@ -112,7 +273,10 @@ namespace Capstone_Project
             }
             return latestYearStats;
         }
-        //TODO: To find comparable pitchers, we want the pitchers last three years of WHIP and ERA averaged by IP.
+        public List<YearStat> getLatestYS(int numberOfYears)
+        {
+            return getLatestYsSince(numberOfYears, getAge());
+        }
         public double averagedERA()
         {
             int totalIP = 0;
@@ -126,25 +290,18 @@ namespace Capstone_Project
             ERA = EraTimesTIP / totalIP;
             return ERA;
         }
-        //TODO: We want to be able to find how many pitchers had their last year at the age and year of experience and ERA (+/-) of the selected pitcher. This data will show how many players were cut next year.
-/*        public YearStat getLatestYearStats()
+        public double averagedERA(int currentAge)
         {
-            int maximum = -1;
-            foreach (YearStat yearStat in this.ageStatsDict.Values)
+            int totalIP = 0;
+            double EraTimesTIP = 0;
+            double ERA = 0;
+            foreach (YearStat yearStat in getLatestYS(3))
             {
-                if (yearStat.yearID > maximum)
-                {
-                    maximum = yearStat.yearID;
-                }
+                totalIP += yearStat.IP;
+                EraTimesTIP += yearStat.IP * yearStat.ERA;
             }
-            foreach (YearStat yearStat in this.ageStatsDict.Values)
-            {
-                if (yearStat.yearID == maximum)
-                {
-                    return yearStat;
-                }
-            }
-            return null;
-        }*/
+            ERA = EraTimesTIP / totalIP;
+            return ERA;
+        }
     }
 }

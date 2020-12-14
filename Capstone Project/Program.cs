@@ -17,8 +17,11 @@ namespace Capstone_Project
             Data.InitializePitchers();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            double[] testList = new double[] { 9, 2, 5, 4, 12, 7, 8, 11, 9, 3, 7, 4, 12, 5, 4, 10, 9, 6, 9, 4 };
+            Console.WriteLine("test");
+            Pitcher.StdDev(testList);
             Application.Run(new SearchForm());
-            Pitcher pitcher = new Pitcher();
+            
 
         }
 

@@ -74,7 +74,6 @@ namespace Capstone_Project
                     pitcherList.Add(pitcher);
                 }
                 x += 1;
-                Console.WriteLine(x);
             }
             return pitcherList;
         }
@@ -93,11 +92,6 @@ namespace Capstone_Project
                 {
                     yearStat.yearInLeague = yearList.IndexOf(yearStat.yearID) + 1;
                 }
-            }
-            Pitcher verlander = Data.searchPitcher("Verlander")[0];
-            foreach (YearStat yearStat in verlander.ageStatsDict.Values)
-            {
-                Console.WriteLine(yearStat.yearID + ": " + yearStat.yearInLeague);
             }
         }
     }

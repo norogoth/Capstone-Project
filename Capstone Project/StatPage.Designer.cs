@@ -29,18 +29,18 @@ namespace Capstone_Project
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.panel1 = new System.Windows.Forms.Panel();
             this.playerChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ButtonPanel = new System.Windows.Forms.TableLayoutPanel();
             this.projectionButton = new System.Windows.Forms.Button();
-            this.HRButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.KButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.playerName = new System.Windows.Forms.Label();
+            this.cutChanceButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playerChart)).BeginInit();
             this.ButtonPanel.SuspendLayout();
@@ -65,10 +65,10 @@ namespace Capstone_Project
             this.playerChart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.playerChart.BackColor = System.Drawing.Color.DimGray;
-            chartArea1.Name = "ChartArea1";
-            this.playerChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.playerChart.Legends.Add(legend1);
+            chartArea4.Name = "ChartArea1";
+            this.playerChart.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.playerChart.Legends.Add(legend4);
             this.playerChart.Location = new System.Drawing.Point(60, 131);
             this.playerChart.Name = "playerChart";
             this.playerChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
@@ -82,20 +82,21 @@ namespace Capstone_Project
             this.ButtonPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonPanel.ColumnCount = 3;
-            this.ButtonPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.ButtonPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.ButtonPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.ButtonPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.ButtonPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.ButtonPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
             this.ButtonPanel.Controls.Add(this.projectionButton, 0, 0);
-            this.ButtonPanel.Controls.Add(this.HRButton, 2, 1);
             this.ButtonPanel.Controls.Add(this.button2, 1, 0);
-            this.ButtonPanel.Controls.Add(this.KButton, 1, 1);
             this.ButtonPanel.Controls.Add(this.button3, 2, 0);
             this.ButtonPanel.Controls.Add(this.button4, 0, 1);
+            this.ButtonPanel.Controls.Add(this.cutChanceButton, 2, 1);
+            this.ButtonPanel.Controls.Add(this.KButton, 1, 1);
             this.ButtonPanel.Location = new System.Drawing.Point(57, 511);
             this.ButtonPanel.Name = "ButtonPanel";
             this.ButtonPanel.RowCount = 2;
             this.ButtonPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.ButtonPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.ButtonPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.ButtonPanel.Size = new System.Drawing.Size(781, 130);
             this.ButtonPanel.TabIndex = 7;
             // 
@@ -107,7 +108,7 @@ namespace Capstone_Project
             this.projectionButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.projectionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.projectionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.projectionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.projectionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.projectionButton.Location = new System.Drawing.Point(3, 3);
             this.projectionButton.Name = "projectionButton";
             this.projectionButton.Padding = new System.Windows.Forms.Padding(10);
@@ -115,25 +116,7 @@ namespace Capstone_Project
             this.projectionButton.TabIndex = 1;
             this.projectionButton.Text = "Toggle Projection";
             this.projectionButton.UseVisualStyleBackColor = false;
-            this.projectionButton.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // HRButton
-            // 
-            this.HRButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.HRButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.HRButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HRButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HRButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.HRButton.Location = new System.Drawing.Point(523, 68);
-            this.HRButton.Name = "HRButton";
-            this.HRButton.Padding = new System.Windows.Forms.Padding(10);
-            this.HRButton.Size = new System.Drawing.Size(255, 59);
-            this.HRButton.TabIndex = 6;
-            this.HRButton.Text = "HR Allowed";
-            this.HRButton.UseVisualStyleBackColor = false;
-            this.HRButton.Click += new System.EventHandler(this.HRButton_Click);
+            this.projectionButton.Click += new System.EventHandler(this.toggleProj_Click);
             // 
             // button2
             // 
@@ -222,6 +205,24 @@ namespace Capstone_Project
             this.playerName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.playerName.Click += new System.EventHandler(this.label1_Click);
             // 
+            // cutChanceButton
+            // 
+            this.cutChanceButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cutChanceButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cutChanceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cutChanceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cutChanceButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cutChanceButton.Location = new System.Drawing.Point(523, 68);
+            this.cutChanceButton.Name = "cutChanceButton";
+            this.cutChanceButton.Padding = new System.Windows.Forms.Padding(10);
+            this.cutChanceButton.Size = new System.Drawing.Size(255, 59);
+            this.cutChanceButton.TabIndex = 9;
+            this.cutChanceButton.Text = "Cut Chance";
+            this.cutChanceButton.UseVisualStyleBackColor = false;
+            this.cutChanceButton.Click += new System.EventHandler(this.cutChanceButton_Click);
+            // 
             // StatPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,11 +246,11 @@ namespace Capstone_Project
         private System.Windows.Forms.Label playerName;
         private System.Windows.Forms.TableLayoutPanel ButtonPanel;
         private System.Windows.Forms.Button projectionButton;
-        private System.Windows.Forms.Button HRButton;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button KButton;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataVisualization.Charting.Chart playerChart;
+        private System.Windows.Forms.Button cutChanceButton;
     }
 }

@@ -62,6 +62,7 @@
     <Compile Include="CsvImporter.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Pitcher.cs" />
+    <Compile Include="ProjYearStat.cs" />
     <Compile Include="SearchPage.cs">
       <SubType>Form</SubType>
     </Compile>
