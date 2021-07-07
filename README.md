@@ -10,7 +10,7 @@ To use this software, first compile and run the code. Then, type in a name of a 
 
 ![2021-07-06 09_26_56-Window](https://user-images.githubusercontent.com/52639031/124809472-00766b00-df15-11eb-997e-20c7668c28f6.png)
 
-Then, you can look at the following historical trends for this pitcher, ERA, WHIP, K/9, K and cut chance. 
+Then, you can look at the following historical trends for this pitcher, ERA, WHIP, K/9, K and cut chance. ERA will show the upper and lower standard deviation prediction for this pitcher as well.
 
 ![2021-07-06 09_27_22-Window](https://user-images.githubusercontent.com/52639031/124809505-09ffd300-df15-11eb-8538-1ae026fec559.png)
 
