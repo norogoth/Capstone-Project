@@ -1,4 +1,6 @@
-# Capstone-Project
+# Aaker Pitcher Analyzer
+
+![03aa87e612ed4f3db037b6ab424c10cb](https://user-images.githubusercontent.com/52639031/124807297-77f6cb00-df12-11eb-9f66-970e8bc07753.png)
 
 This analyzes historical data to create projects for major-league baseball pitchers. The data it ships with goes up to the 2019 year. While this can be updated, no update is planned at the moment. If anyone wants to update this and submit a PR the data comes from [the Sean Lahman database](https://duckduckgo.com/?q=sean+lahman+baseball+db&ia=web).
 
