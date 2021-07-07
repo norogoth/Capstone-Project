@@ -8,4 +8,10 @@ This analyzes historical data to create projects for major-league baseball pitch
 
 To use this software, first compile and run the code. Then, type in a name of a pitcher and select the name from the menu below.
 
-Then, you can look at the following historical trends for this pitcher, ERA, WHIP, K/9, and cut chance. However cut chance only shows up when projections are toggled to be on. You can toggle projections to be on by clicking the toggle projections button. This will show projections based on historical data of how other historical pitchers progressed.
+![2021-07-06 09_26_56-Window](https://user-images.githubusercontent.com/52639031/124809472-00766b00-df15-11eb-997e-20c7668c28f6.png)
+
+Then, you can look at the following historical trends for this pitcher, ERA, WHIP, K/9, K and cut chance. 
+
+![2021-07-06 09_27_22-Window](https://user-images.githubusercontent.com/52639031/124809505-09ffd300-df15-11eb-8538-1ae026fec559.png)
+
+However cut chance only shows up when projections are toggled to be on. You can toggle projections to be on by clicking the "Toggle Projection" button. This will show or hide projections based on historical data of how other historical pitchers progressed.
